@@ -199,13 +199,13 @@
                 // release文件
                 const match = inputUrl.match(/github\.com\/([^\/]+)\/([^\/]+)\/releases\/download\/([^\/]+)\/(.+)/);
                 if (match) {
-                    downloadUrl = `(document.domain)/https://github.com/${match[1]}/${match[2]}/releases/download/${match[3]}/${match[4]}`;
+                    downloadUrl = `https://github.luyb.dpdns.org/https://github.com/${match[1]}/${match[2]}/releases/download/${match[3]}/${match[4]}`;
                 }
             } else if (inputUrl.includes('/archive/')) {
                 // 分支或release源码
                 const match = inputUrl.match(/github\.com\/([^\/]+)\/([^\/]+)\/archive\/(.+)/);
                 if (match) {
-                    downloadUrl = `(document.domain)/https://github/${match[1]}/${match[2]}/archive/${match[3]}`;
+                    downloadUrl = `https://github.luyb.dpdns.org/https://github/${match[1]}/${match[2]}/archive/${match[3]}`;
                 }
             } else if (inputUrl.includes('/blob/')) {
                 // 分支或commit文件
